@@ -14,3 +14,7 @@ The architectures used in training and testing are:
 - EfficientNetB0
 - InceptionV3
 - Xception
+
+## GradCAM
+In the GradCAM folder there is a selection of 10 heatmaps per class for each model.  
+The CATIA2 tool was used to generate the heatmaps. (https://github.com/reFraw/CATIA2)
