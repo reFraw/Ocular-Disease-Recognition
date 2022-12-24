@@ -1,0 +1,6 @@
+argparse
+tensorflow
+numpy
+matplotlib
+opencv-python
+tqdm
