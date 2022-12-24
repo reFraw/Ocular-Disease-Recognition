@@ -85,8 +85,15 @@ if __name__ == "__main__":
 	
 	# Extract the input dimensions and number of channels
 	# for image preprocessing.
-	input_shape = model.layers[0].output_shape[0]
-	image_size = (input_shape[1], input_shape[2])
+	input_shape = model.layers[0].input_shape
+
+	if len(input_shape) == 4:
+		image_size = (input_shape[1], input_shape[1])
+
+	elif len(input_shape) == 1:
+		input_shape = model.layers[0].input_shape[0]
+		image_size = (input_shape[1], input_shape[1])
+		
 	channels = input_shape[3]
 
 	# Loading test image and apply preprocessing
