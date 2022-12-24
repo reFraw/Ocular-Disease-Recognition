@@ -93,7 +93,7 @@ if __name__ == "__main__":
 	elif len(input_shape) == 1:
 		input_shape = model.layers[0].input_shape[0]
 		image_size = (input_shape[1], input_shape[1])
-		
+
 	channels = input_shape[3]
 
 	# Loading test image and apply preprocessing
@@ -119,6 +119,6 @@ if __name__ == "__main__":
 			save_name = "activation_map_{}_layer_{}.png".format(i+1, conv_layer)
 			savepath = os.path.join(conv_layer_savepath, save_name)
 			maps = activation_maps[0,:,:,i]
-			maps = cv2.resize(maps, (512, 512))
+			maps = cv2.resize(maps, (224, 224))
 			plt.imsave(savepath, maps)
 
