@@ -20,5 +20,5 @@ In the GradCAM folder there is a selection of 10 heatmaps per class for each mod
 The CATIA2 tool was used to generate the heatmaps. (https://github.com/reFraw/CATIA2)
 
 ## Activation maps
-The activation maps for each convolutional layer of each model are contained in the activation_maps folder and were obtained with the script in the same folder.  
+The activation maps for each convolutional layer of the FCNNplus network are contained in the activation_maps folder and were obtained with the script in the same folder.  
 The image in the activation_maps/images folder (DRUSEN.jpeg) was used to generate them.
