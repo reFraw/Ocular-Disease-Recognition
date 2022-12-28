@@ -18,3 +18,11 @@ The architectures used in training and testing are:
 - EfficientNetB0
 - InceptionV3
 - Xception
+
+## Visual Explainability
+To verify the correct learning of patterns by the network, visual explainability will be provided to the model.  
+This will be achieved by using the ScoreCAM algorithm for heatmap generation, activation map analysis and convolutional layer filter analysis.  
+### Class Activation Mapping
+
+### Activation maps
+### Filters
