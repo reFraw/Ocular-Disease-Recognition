@@ -25,4 +25,3 @@ This will be achieved by using the ScoreCAM algorithm for heatmap generation and
 ### Class Activation Mapping
 The ScoreCAM algorithm was used to generate the heatmaps as opposed to the more classical GradCAM algorithm.  
 For each class, five images were randomly selected from the test folder and the heatmaps obtained are in the ScoreCAM/FCNNplus_ScoreCAM.zip folder.  
-### Activation maps
